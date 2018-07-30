@@ -1,0 +1,101 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+    font-size: 100%;
+    line-height: 1.5em;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    margin: 1em 0 .2em 0;
+    padding: 0;
+    line-height: 1.2em;
+}
+
+h2 {
+    margin: 1.5em 0 .2em 0;
+    padding: 0;
+    font-size: 1em;
+}
+
+iframe + p {
+    margin-top: 0;
+    padding-top: .2em;
+}
+
+header form {
+    display: block;
+    background: #eee;
+}
+
+header form label {
+    font-weight: bold;
+}
+
+header form p {
+    padding: .5em 1em;
+}
+
+header form input {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1em;
+}
+
+header form input[type="url"] {
+    width: 50%;
+}
+
+header,
+footer {
+    clear: left;
+    float: left;
+    width: 92%;
+    position: relative;
+    left: 4%;
+}
+
+#responsive,
+#responsive div {
+    clear: both;
+    float: left;
+    width: 100%;
+}
+
+#small {
+    float: left;
+    width: 30%;
+    position: relative;
+    left: 4%;
+}
+
+#medium {
+    float: right;
+    width: 58%;
+    position: relative;
+    right: 4%;
+}
+
+#large {
+    clear: both;
+    float: left;
+    width: 92%;
+    position: relative;
+    left: 4%;
+    padding-top: 1em;
+}
+
+#static {
+    clear: both;
+    float: left;
+    width: 92%;
+    position: relative;
+    left: 4%;
+    padding-bottom: 30px;
+}
