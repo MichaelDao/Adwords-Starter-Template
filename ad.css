@@ -38,16 +38,17 @@ a {
     border-radius: 5px;
 }
 
-/* general styles of ad components */
-/* (No dimensions or font sizes here) */
+/*  /////////////////////////////////////////////
+       general styles of ad components
+       (No dimensions or font sizes here)
+///////////////////////////////////////////// */
+
 h1 {
     position: absolute;
     color: #FFFFFF;
-    /*text-shadow: 1px 1px 3px #000;*/
 }
 
 h2 {
-
     background: #FFFFFF;
     color: #000;
     width: 80%;
@@ -73,26 +74,9 @@ p {
 }
 
 /*  /////////////////////////////////////////////
-                   The animations
+              Fade in right animation
+              no need to change anything here
     ///////////////////////////////////////////// */
-.fadeInRight {
-    animation: 1s ease-in-out both fadeInRight;
-}
-
-@-webkit-keyframes fadeInRight {
-    from {
-        opacity: 0;
-        -webkit-transform: translate3d(100%, 0, 0);
-        transform: translate3d(100%, 0, 0);
-    }
-
-    to {
-        opacity: 1;
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
-}
-
 @keyframes fadeInRight {
     from {
         opacity: 0;
@@ -113,7 +97,78 @@ p {
 }
 
 /*  /////////////////////////////////////////////
-    This is where the responsive design steps in
+                Fade in left animation
+    If you want to tweak the length it stays
+    before it moves of screen, change the 20% and 80%
+    to different values to experiment!
+    ///////////////////////////////////////////// */
+@keyframes specialAnimation {
+
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+
+    20% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    80% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+.specialAnimation {
+    -webkit-animation-name: specialAnimation;
+    animation-name: specialAnimation;
+}
+
+/*  /////////////////////////////////////////////
+          The animations ordering and timing
+    animation: the overall time it takes
+               for the whole animation
+
+    animation-delay: how long it waits until
+                    it starts the animation
+    ///////////////////////////////////////////// */
+
+/* This is the first text, this will fade into the screen then exit*/
+.animateFirstText {
+    animation: 3s ease-in-out both specialAnimation;
+}
+
+/* This is the second text, it should come in after the first text leaves */
+.animateSecondText {
+    animation: 1s ease-in-out both fadeInRight;
+    animation-delay: 3s;
+}
+
+/* this is the button, it will come in after the second text */
+.animateButton {
+    animation: 1s ease-in-out both fadeInRight;
+    animation-delay: 4s;
+}
+
+/* THE house image, this will come in last*/
+.animateImage {
+    animation: 1s ease-in-out both fadeInRight;
+    animation-delay: 5s;
+}
+
+/*  /////////////////////////////////////////////
+    Responsive design settings
+    Now this where you ensure all the different sizes fit
     ///////////////////////////////////////////// */
 
 /* 31 PIXELS HIGH */
