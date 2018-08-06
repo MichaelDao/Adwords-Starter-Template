@@ -1,2 +1,2 @@
 # How to use
-Do not modify checker.html, use that to ensure the design of ad.html is correct.
+Use checker.html to check if all the different sizes of ad.html is correct.
