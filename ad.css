@@ -242,8 +242,8 @@ img {
 @media only screen and (height: 50px) and (min-width: 300px) {
     h1 {
         width: 100%;
-        padding-top:10px;
-        padding-left:3px;
+        padding-top: 10px;
+        padding-left: 3px;
 
     }
 
@@ -253,7 +253,7 @@ img {
         -webkit-border-radius: 15px;
         -moz-border-radius: 0;
         border-radius: 15px;
-        margin-top:15px;
+        margin-top: 15px;
 
     }
 }
@@ -477,15 +477,27 @@ img {
     }
 }
 
-@media only screen and (height: 90px) and (min-width: 620px) {
+@media only screen and (height: 90px) and (min-width: 650px) {
     h1 {
         font-size: 2.6em;
         text-align: left;
         padding-left: 1px;
     }
 
+    h2 {
+        font-size: 2em;
+        text-align: center;
+        margin-left: -4px;
+        width: 28%;
+        margin-bottom: 8px;
+    }
+
     img {
-        right: 1%;
+        right: 10px;
+        display: block;
+        width: auto;
+        height: 166px;
+        top: -60px;
     }
 }
 
