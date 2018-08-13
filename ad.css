@@ -68,11 +68,6 @@ img {
     position: absolute;
 }
 
-p {
-    position: absolute;
-    text-shadow: 1px 1px 4px #000;
-}
-
 /*  /////////////////////////////////////////////
               Fade in right animation
               no need to change anything here
@@ -183,11 +178,11 @@ p {
         text-align: center;
     }
 
-    h1 span {
+    h1 {
         display: block;
     }
 
-    h2, p, img {
+    h2, img {
         display: none;
     }
 }
@@ -199,7 +194,7 @@ p {
         line-height: 31px;
     }
 
-    h1 span {
+    h1 {
         display: inline;
     }
 }
@@ -242,14 +237,24 @@ p {
 
         border-radius: 0;
     }
+}
 
-    p {
-        display: block;
-        top: 0;
-        right: 0;
-        width: 30%;
-        line-height: 31px;
-        text-align: center;
+@media only screen and (height: 50px) and (min-width: 300px) {
+    h1 {
+        width: 100%;
+        padding-top:10px;
+        padding-left:3px;
+
+    }
+
+    h2 {
+        width: 45%;
+        right: 2%;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 0;
+        border-radius: 15px;
+        margin-top:15px;
+
     }
 }
 
@@ -265,7 +270,7 @@ p {
         text-align: center;
     }
 
-    h1 span {
+    h1 {
         display: block;
     }
 
@@ -280,7 +285,7 @@ p {
         font-size: 1em;
     }
 
-    p, img {
+    img {
         display: none;
     }
 }
@@ -294,7 +299,7 @@ p {
         top: 0;
     }
 
-    h1 span {
+    h1 {
         display: inline;
     }
 
@@ -336,7 +341,7 @@ p {
 
     }
 
-    p, img {
+    img {
         padding-top: 15px;
         left: 280px;
         width: 230px; /* you can use % */
@@ -353,14 +358,6 @@ p {
         right: 30%;
     }
 
-    p {
-        display: block;
-        top: 0;
-        right: 3%;
-        width: 23%;
-        height: 38px;
-        line-height: 38px;
-    }
 }
 
 @media only screen and (height: 60px) and (min-width: 600px) {
@@ -371,7 +368,6 @@ p {
         top: -35px;
         right: 30%;
     }
-
 }
 
 /* 90 PIXELS HIGH */
@@ -386,7 +382,7 @@ p {
         text-align: center;
     }
 
-    h1 span {
+    h1 {
         display: block;
     }
 
@@ -400,11 +396,11 @@ p {
         font-size: 1.3em;
     }
 
-    h2 span {
+    h2 {
         display: block;
     }
 
-    p, img {
+    img {
         display: none;
     }
 }
@@ -446,7 +442,7 @@ p {
         line-height: 30px;
     }
 
-    h2 span {
+    h2 {
         display: inline;
     }
 }
@@ -454,14 +450,6 @@ p {
 @media only screen and (height: 90px) and (min-width: 390px) {
     img {
         right: 24%;
-    }
-
-    p {
-        display: block;
-        bottom: 35px;
-        right: 3%;
-        width: 18%;
-        line-height: 1.4em;
     }
 }
 
@@ -472,7 +460,7 @@ p {
         line-height: 60px;
     }
 
-    h1 span {
+    h1 {
         display: inline;
     }
 
@@ -487,10 +475,6 @@ p {
     img {
         right: 4%;
     }
-
-    p {
-        display: none;
-    }
 }
 
 @media only screen and (height: 90px) and (min-width: 620px) {
@@ -502,12 +486,6 @@ p {
 
     img {
         right: 1%;
-    }
-
-    p {
-        display: block;
-        bottom: 38px;
-        font-size: 1.2em;
     }
 }
 
@@ -523,7 +501,7 @@ p {
         text-align: center;
     }
 
-    h1 span {
+    h1 {
         display: block;
     }
 
@@ -537,12 +515,8 @@ p {
         font-size: 1.3em;
     }
 
-    h2 span {
+    h2 {
         display: block;
-    }
-
-    p, img {
-        display: none;
     }
 }
 
@@ -583,7 +557,7 @@ p {
         line-height: 35px;
     }
 
-    h2 span {
+    h2 {
         display: inline;
     }
 }
@@ -597,24 +571,11 @@ p {
     img {
         right: 4%;
     }
-
-    p {
-        display: none;
-    }
 }
 
 @media only screen and (height: 125px) and (min-width: 480px) {
     img {
         right: 24%;
-    }
-
-    p {
-        display: block;
-        bottom: 40px;
-        right: 3%;
-        width: 18%;
-        line-height: 1.4em;
-        font-size: 1.3em;
     }
 }
 
@@ -625,7 +586,7 @@ p {
         left: 3%;
     }
 
-    h1 span {
+    h1 {
         display: inline;
     }
 
@@ -635,13 +596,6 @@ p {
 
     img {
         right: 18%;
-    }
-
-    p {
-        display: block;
-        bottom: 40px;
-        width: 13%;
-        font-size: 1.2em;
     }
 }
 
@@ -656,7 +610,7 @@ p {
         text-align: center;
     }
 
-    h1 span {
+    h1 {
         display: block;
     }
 
@@ -674,7 +628,7 @@ p {
         z-index: 100;
     }
 
-    h2 span {
+    h2 {
         display: block;
     }
 
@@ -683,18 +637,6 @@ p {
         bottom: 0;
         margin-left: -220px;
 
-    }
-
-    p {
-        left: 4%;
-        bottom: 6px;
-        font-size: 1.1em;
-        width: 92%;
-        line-height: 1.4em;
-    }
-
-    p span {
-        display: block;
     }
 }
 
@@ -730,10 +672,6 @@ p {
         width: auto;
         right: auto;
     }
-
-    p {
-        padding-left: 100px;
-    }
 }
 
 @media only screen and (height: 250px) and (min-width: 220px) {
@@ -751,7 +689,7 @@ p {
         font-size: 1.7em;
     }
 
-    h2 span {
+    h2 {
         display: inline;
     }
 
@@ -759,11 +697,6 @@ p {
         height: 140px;
         width: auto;
         right: auto;
-    }
-
-    p {
-        padding-left: 120px;
-        font-size: 1.2em;
     }
 }
 
@@ -780,7 +713,7 @@ p {
         margin-left: 30px;
     }
 
-    h2 span {
+    h2 {
         display: block;
     }
 
@@ -791,13 +724,6 @@ p {
         padding-left: 65px;
 
     }
-
-    p {
-        width: 100%;
-        left: auto;
-        padding-left: 120px;
-        font-size: 1.2em;
-    }
 }
 
 @media only screen and (height: 250px) and (min-width: 600px) {
@@ -807,7 +733,7 @@ p {
         font-size: 4em;
     }
 
-    h1 span {
+    h1 {
         display: inline;
     }
 
@@ -818,7 +744,7 @@ p {
         font-size: 2.5em;
     }
 
-    h2 span {
+    h2 {
         display: inline;
     }
 }
@@ -841,7 +767,7 @@ p {
         text-align: left;
     }
 
-    h1 span {
+    h1 {
         display: block;
     }
 
@@ -859,7 +785,7 @@ p {
         z-index: 100;
     }
 
-    h2 span {
+    h2 {
         display: block;
     }
 
@@ -867,19 +793,6 @@ p {
         height: 200px;
         bottom: 55px;
         left: -20%;
-    }
-
-    p {
-        left: 0;
-        bottom: 6px;
-        font-size: 1.1em;
-        width: 100%;
-        line-height: 1.4em;
-        text-align: center;
-    }
-
-    p span {
-        display: block;
     }
 }
 
@@ -922,16 +835,12 @@ p {
         border-radius: 15px;
     }
 
-    h2 span {
+    h2 {
         display: inline;
     }
 
     img {
         top: 110px;
-    }
-
-    p span {
-        display: inline;
     }
 }
 
@@ -950,7 +859,7 @@ p {
         font-size: 2.2em;
     }
 
-    h2 span {
+    h2 {
         display: block;
     }
 
@@ -959,17 +868,6 @@ p {
         right: auto;
         bottom: 0;
         top: auto;
-    }
-
-    p {
-        width: 40%;
-        left: 55%;
-        font-size: 1.2em;
-        text-align: left;
-    }
-
-    p span {
-        display: block;
     }
 }
 
@@ -987,7 +885,7 @@ p {
         font-size: 3em;
     }
 
-    h2 span {
+    h2 {
         display: inline;
     }
 
@@ -996,10 +894,6 @@ p {
         left: auto;
         width: auto;
         right: 50%;
-    }
-
-    p {
-        font-size: 1.5em;
     }
 }
 
@@ -1010,7 +904,7 @@ p {
         font-size: 4.6em;
     }
 
-    h1 span {
+    h1 {
         display: inline;
     }
 
@@ -1021,10 +915,6 @@ p {
 
     img {
         height: 220px;
-    }
-
-    p {
-        font-size: 1.7em;
     }
 }
 
@@ -1046,7 +936,7 @@ p {
         text-align: left;
     }
 
-    h1 span {
+    h1 {
         display: block;
     }
 
@@ -1062,7 +952,7 @@ p {
         z-index: 100;
     }
 
-    h2 span {
+    h2 {
         display: block;
     }
 
@@ -1070,19 +960,6 @@ p {
         width: 160%;
         bottom: 100px;
         left: -40%;
-    }
-
-    p {
-        left: 0;
-        bottom: 30px;
-        font-size: 1.1em;
-        width: 100%;
-        line-height: 1.4em;
-        text-align: center;
-    }
-
-    p span {
-        display: block;
     }
 }
 
@@ -1114,10 +991,6 @@ p {
         width: 100%;
         left: 0;
     }
-
-    p {
-        font-size: 1.6em;
-    }
 }
 
 @media only screen and (height: 600px) and (min-width: 280px) {
@@ -1131,17 +1004,6 @@ p {
     img {
         bottom: 0;
         width: 110%;
-    }
-
-    p {
-        text-align: left;
-        bottom: 10px;
-        width: 92%;
-        left: 4%;
-    }
-
-    p span {
-        display: inline;
     }
 }
 
@@ -1178,7 +1040,7 @@ p {
         line-height: 40px;
     }
 
-    h2 span {
+    h2 {
         display: inline;
     }
 
@@ -1195,11 +1057,6 @@ p {
     img {
         width: 78%;
         left: -10%;
-    }
-
-    p {
-        width: 20%;
-        left: 73%;
     }
 }
 
@@ -1218,7 +1075,7 @@ p {
         line-height: 73px;
     }
 
-    h2 span {
+    h2 {
         display: block;
     }
 
@@ -1230,11 +1087,6 @@ p {
         left: auto;
         right: 50%;
     }
-
-    p {
-        width: 40%;
-        left: 55%;
-    }
 }
 
 @media only screen and (height: 600px) and (min-width: 820px) {
@@ -1243,7 +1095,7 @@ p {
         line-height: 200px;
     }
 
-    h1 span {
+    h1 {
         display: inline;
     }
 }
