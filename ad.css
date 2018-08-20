@@ -17,7 +17,7 @@ html {
 }
 
 body {
-    font-family: Museo;
+    font-family: Museo, sans-serif;
     width: 100%;
     height: 100%;
     font-size: 70%;
@@ -176,9 +176,6 @@ img {
         font-size: 1em;
         line-height: 15px;
         text-align: center;
-    }
-
-    h1 {
         display: block;
     }
 
@@ -192,9 +189,6 @@ img {
         font-size: 1.4em;
         top: 0;
         line-height: 31px;
-    }
-
-    h1 {
         display: inline;
     }
 }
@@ -213,14 +207,6 @@ img {
         right: 0;
         text-align: center;
         font-size: 1.2em;
-        -webkit-border-top-left-radius: 0;
-        -moz-border-radius-topleft: 0;
-
-        border-top-left-radius: 0;
-        -webkit-border-bottom-left-radius: 0;
-        -moz-border-radius-bottomleft: 0;
-
-        border-bottom-left-radius: 0;
     }
 }
 
@@ -234,7 +220,6 @@ img {
         right: 30%;
         -webkit-border-radius: 0;
         -moz-border-radius: 0;
-
         border-radius: 0;
     }
 }
@@ -242,19 +227,20 @@ img {
 @media only screen and (height: 50px) and (min-width: 300px) {
     h1 {
         width: 100%;
-        padding-top: 10px;
-        padding-left: 3px;
+        padding-top: 15px;
+        padding-left: 19px;
+        font-size: 1.7em;
 
     }
 
     h2 {
+        line-height: 25px;
         width: 45%;
         right: 2%;
         -webkit-border-radius: 15px;
         -moz-border-radius: 0;
         border-radius: 15px;
-        margin-top: 15px;
-
+        margin-top: 13px;
     }
 }
 
@@ -380,9 +366,6 @@ img {
         left: 0;
         font-size: 1.2em;
         text-align: center;
-    }
-
-    h1 {
         display: block;
     }
 
@@ -394,10 +377,6 @@ img {
         line-height: 20px;
         text-align: center;
         font-size: 1.3em;
-    }
-
-    h2 {
-        display: block;
     }
 
     img {
@@ -440,16 +419,7 @@ img {
     h2 {
         height: 30px;
         line-height: 30px;
-    }
-
-    h2 {
         display: inline;
-    }
-}
-
-@media only screen and (height: 90px) and (min-width: 390px) {
-    img {
-        right: 24%;
     }
 }
 
@@ -458,9 +428,6 @@ img {
         font-size: 2.3em;
         width: 80%;
         line-height: 60px;
-    }
-
-    h1 {
         display: inline;
     }
 
@@ -477,27 +444,28 @@ img {
     }
 }
 
-@media only screen and (height: 90px) and (min-width: 650px) {
+@media only screen and (height: 90px) and (min-width: 728px) {
     h1 {
-        font-size: 2.6em;
+        font-size: 2.8em;
         text-align: left;
-        padding-left: 1px;
+        padding-left: 15px;
+        top: -2px;
     }
 
     h2 {
         font-size: 2em;
         text-align: center;
-        margin-left: -4px;
-        width: 28%;
+        margin-left: 10px;
+        width: 26%;
         margin-bottom: 8px;
     }
 
     img {
-        right: 10px;
+        right: 57px;
         display: block;
         width: auto;
-        height: 166px;
-        top: -60px;
+        height: 139px;
+        top: -33px;
     }
 }
 
@@ -511,9 +479,6 @@ img {
         left: 2px;
         font-size: 1.3em;
         text-align: center;
-    }
-
-    h1 {
         display: block;
     }
 
@@ -525,10 +490,6 @@ img {
         line-height: 20px;
         text-align: center;
         font-size: 1.3em;
-    }
-
-    h2 {
-        display: block;
     }
 }
 
@@ -567,9 +528,6 @@ img {
     h2 {
         height: 35px;
         line-height: 35px;
-    }
-
-    h2 {
         display: inline;
     }
 }
@@ -585,20 +543,11 @@ img {
     }
 }
 
-@media only screen and (height: 125px) and (min-width: 480px) {
-    img {
-        right: 24%;
-    }
-}
-
-@media only screen and (height: 125px) and (min-width: 620px) {
+@media only screen and (height: 125px) and (min-width: 728px) {
     h1 {
         font-size: 2.8em;
         line-height: 90px;
         left: 3%;
-    }
-
-    h1 {
         display: inline;
     }
 
@@ -620,9 +569,6 @@ img {
         line-height: 22px;
         font-size: 1.3em;
         text-align: center;
-    }
-
-    h1 {
         display: block;
     }
 
@@ -634,21 +580,16 @@ img {
         line-height: 20px;
         text-align: center;
         font-size: 1.3em;
-        -webkit-border-radius: 0;
-        -moz-border-radius: 0;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
         border-radius: 15px;
         z-index: 100;
-    }
-
-    h2 {
-        display: block;
     }
 
     img {
         height: 150px;
         bottom: 0;
         margin-left: -220px;
-
     }
 }
 
@@ -659,7 +600,6 @@ img {
         bottom: 0;
         margin-left: -62px;
     }
-
 }
 
 @media only screen and (height: 250px) and (min-width: 165px) {
@@ -686,29 +626,31 @@ img {
     }
 }
 
-@media only screen and (height: 250px) and (min-width: 220px) {
+@media only screen and (height: 250px) and (min-width: 250px) {
     h1 {
         height: 90px;
         line-height: 43px;
         font-size: 2.5em;
         padding-left: 10px;
+        padding-top: 6px;
+
     }
 
     h2 {
-        top: 90px;
+        top: 70px;
         height: 45px;
         line-height: 45px;
-        font-size: 1.7em;
-    }
-
-    h2 {
+        font-size: 2.2em;
         display: inline;
+        border-radius: 30px;
     }
 
     img {
-        height: 140px;
+        height: 132px;
         width: auto;
         right: auto;
+        bottom: -16px;
+        margin-left: -54px;
     }
 }
 
@@ -719,22 +661,19 @@ img {
     }
 
     h2 {
-        font-size: 2em;
+        font-size: 2.3em;
         text-align: center;
         width: 70%;
         margin-left: 30px;
-    }
-
-    h2 {
         display: block;
     }
 
     img {
-        height: 120px;
+        height: 153px;
         width: auto;
         right: auto;
-        padding-left: 65px;
-
+        margin-left: -58px;
+        top: 115px;
     }
 }
 
@@ -743,9 +682,6 @@ img {
         height: 120px;
         line-height: 120px;
         font-size: 4em;
-    }
-
-    h1 {
         display: inline;
     }
 
@@ -754,9 +690,6 @@ img {
         padding: 0;
         line-height: 60px;
         font-size: 2.5em;
-    }
-
-    h2 {
         display: inline;
     }
 }
@@ -777,9 +710,6 @@ img {
         left: 0;
         font-size: 1.4em;
         text-align: left;
-    }
-
-    h1 {
         display: block;
     }
 
@@ -797,19 +727,11 @@ img {
         z-index: 100;
     }
 
-    h2 {
-        display: block;
-    }
-
     img {
         height: 200px;
         bottom: 55px;
         left: -20%;
     }
-}
-
-@media only screen and (height: 400px) and (min-width: 125px) {
-
 }
 
 @media only screen and (height: 400px) and (min-width: 180px) {
@@ -845,9 +767,6 @@ img {
         height: 40px;
         line-height: 40px;
         border-radius: 15px;
-    }
-
-    h2 {
         display: inline;
     }
 
@@ -869,9 +788,6 @@ img {
         height: 100px;
         line-height: 47px;
         font-size: 2.2em;
-    }
-
-    h2 {
         display: block;
     }
 
@@ -895,9 +811,6 @@ img {
         height: 80px;
         line-height: 80px;
         font-size: 3em;
-    }
-
-    h2 {
         display: inline;
     }
 
@@ -914,9 +827,6 @@ img {
         height: 130px;
         line-height: 130px;
         font-size: 4.6em;
-    }
-
-    h1 {
         display: inline;
     }
 
@@ -930,12 +840,6 @@ img {
     }
 }
 
-@media only screen and (height: 400px) and (min-width: 820px) {
-    h1 {
-        font-size: 6em;
-    }
-}
-
 /* 400 PIXELS HIGH */
 @media only screen and (height: 600px) {
     h1 {
@@ -946,9 +850,6 @@ img {
         left: 0;
         font-size: 1.5em;
         text-align: left;
-    }
-
-    h1 {
         display: block;
     }
 
@@ -962,10 +863,6 @@ img {
         -moz-border-radius: 0;
         border-radius: 0;
         z-index: 100;
-    }
-
-    h2 {
-        display: block;
     }
 
     img {
@@ -1050,9 +947,6 @@ img {
     h2 {
         height: 40px;
         line-height: 40px;
-    }
-
-    h2 {
         display: inline;
     }
 
@@ -1085,9 +979,6 @@ img {
         font-size: 4em;
         height: 150px;
         line-height: 73px;
-    }
-
-    h2 {
         display: block;
     }
 
@@ -1105,9 +996,6 @@ img {
     h1 {
         font-size: 6em;
         line-height: 200px;
-    }
-
-    h1 {
         display: inline;
     }
 }
