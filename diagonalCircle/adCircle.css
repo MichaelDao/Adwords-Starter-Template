@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: "Museo";
-    src: url("fonts/Museo500-Regular.ttf");
+    src: url("../resources/fonts/Museo500-Regular.ttf");
 }
 
 html {
@@ -47,11 +47,10 @@ h1 {
     position: absolute;
     color: #FFFFFF;
 }
-
 h2 {
     background: #FFFFFF;
     color: #000;
-    width: 80%;
+    width: 90%;
     position: absolute;
     font-weight: normal;
     -webkit-border-bottom-left-radius: 5px;
@@ -60,7 +59,7 @@ h2 {
     -moz-border-radius-bottomright: 5px;
     border-radius: 15px;
     margin-right: 10px;
-    margin-left: 10px;
+    margin-left: -1px;
     text-align: center;
 }
 

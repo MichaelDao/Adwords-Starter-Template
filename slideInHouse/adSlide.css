@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: "Museo";
-    src: url("fonts/Museo500-Regular.ttf");
+    src: url("../resources/fonts/Museo500-Regular.ttf");
 }
 
 html {
@@ -51,7 +51,7 @@ h1 {
 h2 {
     background: #FFFFFF;
     color: #000;
-    width: 80%;
+    width: 90%;
     position: absolute;
     font-weight: normal;
     -webkit-border-bottom-left-radius: 5px;
@@ -60,7 +60,7 @@ h2 {
     -moz-border-radius-bottomright: 5px;
     border-radius: 15px;
     margin-right: 10px;
-    margin-left: 10px;
+    margin-left: -1px;
     text-align: center;
 }
 
@@ -140,25 +140,25 @@ img {
 
 /* This is the first text, this will fade into the screen then exit*/
 .animateFirstText {
-    animation: 3s ease-in-out both specialAnimation;
+    animation: 5s ease-in-out both specialAnimation;
 }
 
 /* This is the second text, it should come in after the first text leaves */
 .animateSecondText {
     animation: 1s ease-in-out both fadeInRight;
-    animation-delay: 3s;
+    animation-delay: 4.5s;
 }
 
 /* this is the button, it will come in after the second text */
 .animateButton {
     animation: 1s ease-in-out both fadeInRight;
-    animation-delay: 4s;
+    animation-delay: 7s;
 }
 
 /* THE house image, this will come in last*/
 .animateImage {
     animation: 1s ease-in-out both fadeInRight;
-    animation-delay: 5s;
+    animation-delay: 7s;
 }
 
 /*  /////////////////////////////////////////////
