@@ -1,4 +1,4 @@
-# Instant template with animations and styling
+# ohm
 Check out the different types of templates in index.html, make sure you disable adblocker!
 - Change the text and images in ad.html
 - Change the responsiveness, styling and animations in ad.css
