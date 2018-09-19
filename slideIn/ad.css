@@ -10,7 +10,7 @@
     padding-top: 8px;
     width: 1em;
     height: 1em;
-    color: rgb(31, 61, 126);
+    color: gray;
 }
 
 html {
@@ -34,7 +34,7 @@ a {
     overflow: hidden;
     color: #fff;
     text-decoration: none;
-    background: rgb(31, 61, 126);
+    background: gray;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -108,15 +108,7 @@ a {
 
     animation-delay: how long it waits until
                     it starts the animation
-
-    Also in the near future, I will make this code
-    more modular with SASS, so you will need to
-    bear with this hack i made.
     ///////////////////////////////////////////// */
-
-/*
- ITERATION 1
- */
 
 /* This is the first text, this will fade into the screen then exit*/
 .animateFirstText {
@@ -131,70 +123,14 @@ a {
 
 /* this is the button, it will come in after the second text */
 .animateButton {
-    animation: 4s ease-in-out both specialAnimation;
-    animation-delay: 6.8s;
+    animation: .9s ease-in-out both fadeInRight;
+    animation-delay: 6.5s;
 }
 
 /* THE house image, this will come in last*/
 .animateImage {
-    animation: 4s ease-in-out both specialAnimation;
-    animation-delay: 6.8s;
-}
-
-/*
- ITERATION 2
- */
-
-/* This is the first text, this will fade into the screen then exit*/
-.animateFirstText2 {
-    animation: 4.5s ease-in-out both specialAnimation;
-    animation-delay: 10.2s;
-}
-
-/* This is the second text, it should come in after the first text leaves */
-.animateSecondText2 {
-    animation: 3.5s ease-in-out both specialAnimation;
-    animation-delay: 14s;
-}
-
-/* this is the button, it will come in after the second text */
-.animateButton2 {
-    animation: 4s ease-in-out both specialAnimation;
-    animation-delay: 17s;
-}
-
-/* THE house image, this will come in last*/
-.animateImage2 {
-    animation: 4s ease-in-out both specialAnimation;
-    animation-delay: 17s;
-}
-
-/*
- ITERATION 3
- */
-
-/* This is the first text, this will fade into the screen then exit*/
-.animateFirstText3 {
-    animation: 4.5s ease-in-out both specialAnimation;
-    animation-delay: 20.4s;
-}
-
-/* This is the second text, it should come in after the first text leaves */
-.animateSecondText3 {
-    animation: 3.5s ease-in-out both specialAnimation;
-    animation-delay: 24.4s;
-}
-
-/* this is the button, it will come in after the second text */
-.animateButton3 {
-    animation: .9s ease-in-out both fadeInRight;
-    animation-delay: 27.1s;
-}
-
-/* THE house image, this will come in last*/
-.animateImage3 {
     animation: 1s ease-in-out both fadeInRight;
-    animation-delay: 27.1s;
+    animation-delay: 6.4s;
 }
 
 
@@ -209,7 +145,7 @@ h1 {
 
 h2 {
     background: #FFFFFF;
-    color: rgb(31, 61, 126);
+    color: gray;
     width: 90%;
     position: absolute;
     font-weight: normal;

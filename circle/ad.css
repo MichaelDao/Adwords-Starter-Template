@@ -10,7 +10,7 @@
     padding-top: 8px;
     width: 1em;
     height: 1em;
-    color: rgb(31, 61, 126);
+    color: gray;
 }
 
 html {
@@ -34,7 +34,7 @@ a {
     overflow: hidden;
     color: #fff;
     text-decoration: none;
-    background: rgb(31, 61, 126);
+    background: gray;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -64,11 +64,52 @@ a {
 }
 
 /*  /////////////////////////////////////////////
+              Diagonal animation
+    ///////////////////////////////////////////// */
+@keyframes fadeInDiagonal {
+    from {
+        opacity: 1;
+        -webkit-transform: translate3d(100%, 100%, 0);
+        transform: translate3d(100%, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, -100%, 0);
+    }
+}
+
+.fadeInDiagonal {
+    -webkit-animation-name: fadeInDiagonal;
+    animation-name: fadeInDiagonal;
+}
+
+/*  /////////////////////////////////////////////
+              Fade in  animation
+    ///////////////////////////////////////////// */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+/*  /////////////////////////////////////////////
                 Fade in left animation
     If you want to tweak the length it stays
     before it moves of screen, change the 20% and 80%
     to different values to experiment!
     ///////////////////////////////////////////// */
+
 @keyframes specialAnimation {
 
     0% {
@@ -101,18 +142,43 @@ a {
     animation-name: specialAnimation;
 }
 
-@keyframes fadeInOpacity {
+/*  /////////////////////////////////////////////
+This one dissapears with the circle
+///////////////////////////////////////////// */
+@keyframes animateDisappear {
 
     0% {
         opacity: 0;
-    }
-    99% {
-        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
     }
 
-    100% {
+    20% {
         opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
     }
+
+    79% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    80% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.animateDisappear {
+    -webkit-animation-name: animateDisappear;
+    animation-name: animateDisappear;
 }
 
 /*  /////////////////////////////////////////////
@@ -131,47 +197,36 @@ a {
 
 /* This is the second text, it should come in after the first text leaves */
 .animateSecondText {
-    animation: 3.5s ease-in-out both specialAnimation;
+    animation: 4.5s ease-in-out both animateDisappear;
     animation-delay: 3.8s;
 }
 
 /* this is the button, it will come in after the second text */
 .animateButton {
-    animation: .9s ease-in-out both fadeInRight;
-    animation-delay: 6.5s;
+    animation: .1s ease-in-out both fadeIn;
+    animation-delay: 7.2s;
 }
 
 /* THE house image, this will come in last*/
 .animateImage {
-    animation: 1s ease-in-out both fadeInRight;
-    animation-delay: 6.4s;
+    animation: .1s ease-in-out both fadeIn;
+    animation-delay: 7s;
 }
 
-/* THE house image, this will come in last*/
-.animateExpander {
-    animation: 7.4s ease-in-out both fadeInOpacity;
+.animateCircle {
+    animation: 2s ease-in-out both fadeInDiagonal;
+    animation-delay: 6s;
 }
 
-/*  /////////////////////////////////////////////
-       expand button code
-///////////////////////////////////////////// */
-#blocker {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 9999;
-}
-
-#grow {
-    transition: all .2s ease-in-out;
-}
-
-#grow:hover {
-    transform: scale(1.1);
+#circle {
+    width: 1000px;
+    height: 1000px;
+    background: #fef25f;
+    -moz-border-radius: 500px;
+    -webkit-border-radius: 500px;
+    border-radius: 500px;
+    z-index: 100;
+    position: absolute;
 }
 
 /*  /////////////////////////////////////////////
@@ -185,7 +240,7 @@ h1 {
 
 h2 {
     background: #FFFFFF;
-    color: rgb(31, 61, 126);
+    color: gray;
     width: 90%;
     position: absolute;
     font-weight: normal;
@@ -217,6 +272,7 @@ img {
         padding-left: 8px;
         font-size: 1.6em;
         text-align: center;
+
     }
 
     h2 {
@@ -416,5 +472,4 @@ img {
         width: 143%;
         left: -23%;
     }
-
 }
